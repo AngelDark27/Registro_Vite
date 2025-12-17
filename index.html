@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro</title>
+  </head>
+  <body>
+    <div id="app">
+      <fieldset>
+        <div>
+        <legend>Login</legend>
+        <label for="username">Username:</label>
+        <input id="username" name="username"><br>
+        </div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br>
+      </fieldset>
+      <fieldset>
+        <legend>Dati dello Studente</legend>
+        <label for="cognome">Cognome:</label>
+        <input id="cognome" name="cognome"><br>
+        <label for="nome">Nome:</label>
+        <input id="nome" name="nome"><br>
+      </fieldset>
+      <fieldset>
+        <legend>Esito della prova</legend>
+        <label for="voto">Voto:</label>
+        <select name="voto" id="voto">
+          <option value="dieci">10</option>
+          <option value="nove-cinque">9.5</option>
+          <option value="nove">9</option>
+          <option value="otto-cinque">8.5</option>
+          <option value="otto">8</option>
+          <option value="sette-cinque">7.5</option>
+          <option value="sette">7</option>
+          <option value="sei-cinque">6.5</option>
+          <option value="sei">6</option>
+          <option value="cinque-cinque">5.5</option>
+          <option value="cinque">5</option>
+        </select><br>
+        <label for="materia">Materia:</label>
+        <select name="materia" id="materia">
+          <option value="Arte">Arte</option>
+          <option value="Educazione-fisica">Educazione Fisica</option>
+          <option value="Geografia">Geografia</option>
+          <option value="Inglese">Inglese</option>
+          <option value="Italiano">Italiano</option>
+          <option value="Matematica">Matematica</option>
+          <option value="Musica">Musica</option>
+          <option value="Scienza">Scienze</option>
+          <option value="Storia">Storia</option>
+          <option value="Tecnologia">Tecnologia</option>
+        </select><br>
+        <label for="data_prova">Data:</label>
+        <input type="date" id="data_prova" name="data_prova"><br>
+        <label for="ora">Ora:</label>
+        <input type="time" id="ora" name="ora" min="08:00" max="12:00"><br>
+      </fieldset>
+      <fieldset>
+        <legend>Altro</legend>
+        <label for="note">Note del docente:</label>
+        <input id="note" name="note"><br>
+      </fieldset>
+      <button id="invia">Invia</button>
+    </div>
+    <script type="module" src="/src/main.js" defer></script>
+  </body>
+</html>
